@@ -4,14 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="دخلك — مساعد مالي شخصي لإدارة الدخل والمصروفات والالتزامات والادخار والمتابعة المالية.">
+<meta name="theme-color" content="#07121b">
 <title>دخلك | إدارة مصروفاتك ودخلك بوضوح</title>
+<link rel="icon" href="assets/logo.png">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="nav">
   <div class="container nav-inner">
     <a class="brand" href="index.html"><img src="assets/logo.png" alt="شعار دخلك"><span>دَخْلَكْ</span></a>
-    <nav class="nav-links">
+    <button class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="site-menu">☰</button>
+    <nav class="nav-links" id="site-menu">
       <a href="#features"><span data-lang="ar">المزايا</span><span data-lang="en" hidden>Features</span></a>
       <a href="#screens"><span data-lang="ar">صور من التطبيق</span><span data-lang="en" hidden>Screenshots</span></a>
       <a href="about.html"><span data-lang="ar">عن التطبيق</span><span data-lang="en" hidden>About</span></a>
@@ -20,7 +23,6 @@
     </nav>
   </div>
 </header>
-
 <main>
 <section class="hero">
   <div class="container hero-grid">
@@ -47,11 +49,10 @@
     </div>
   </div>
 </section>
-
 <section class="section" id="features">
   <div class="container">
     <span class="tag"><span data-lang="ar">مصمم للاستخدام اليومي</span><span data-lang="en" hidden>Built for everyday use</span></span>
-    <h2 class="section-title" style="margin-top:14px"><span data-lang="ar">كل ما تحتاجه في مكان واحد</span><span data-lang="en" hidden>Everything you need in one place</span></h2>
+    <h2 class="section-title"><span data-lang="ar">كل ما تحتاجه في مكان واحد</span><span data-lang="en" hidden>Everything you need in one place</span></h2>
     <p class="section-lead"><span data-lang="ar">واجهة واضحة، أدوات عملية، ومسارات تساعدك على فهم أموالك واتخاذ قراراتك بنفسك.</span><span data-lang="en" hidden>A clear interface and practical tools that help you understand your finances and make your own decisions.</span></p>
     <div class="grid-3">
       <article class="card"><div class="icon">↗</div><h3><span data-lang="ar">الدخل والمصروفات</span><span data-lang="en" hidden>Income & expenses</span></h3><p><span data-lang="ar">تسجيل وتتبع التدفقات المالية اليومية مع تنظيم واضح للتفاصيل.</span><span data-lang="en" hidden>Track daily inflows and outflows with clear, structured details.</span></p></article>
@@ -66,55 +67,41 @@
     </div>
   </div>
 </section>
-
 <section class="section" id="screens">
   <div class="container">
     <span class="tag"><span data-lang="ar">من داخل التطبيق</span><span data-lang="en" hidden>Inside the app</span></span>
-    <h2 class="section-title" style="margin-top:14px"><span data-lang="ar">تجربة مالية متكاملة في واجهة واحدة</span><span data-lang="en" hidden>A complete financial experience in one app</span></h2>
+    <h2 class="section-title"><span data-lang="ar">تجربة مالية متكاملة في واجهة واحدة</span><span data-lang="en" hidden>A complete financial experience in one app</span></h2>
     <p class="section-lead"><span data-lang="ar">لقطات حقيقية من «دخلك» توضح لوحة المتابعة، الصحة المالية، التقارير، وأسعار الذهب والعملات.</span><span data-lang="en" hidden>Real Dakhlek screenshots showing the dashboard, financial health, reports, gold prices and currency exchange.</span></p>
-
     <div class="feature-showcase">
       <article class="showcase-row">
         <div class="showcase-copy"><span class="tag"><span data-lang="ar">لوحة المتابعة</span><span data-lang="en" hidden>Dashboard</span></span><h3><span data-lang="ar">كل أرقامك المهمة أمامك</span><span data-lang="en" hidden>Your key numbers at a glance</span></h3><p><span data-lang="ar">تابع الرصيد والدخل والمصروفات والالتزامات والادخار من واجهة واضحة وسريعة.</span><span data-lang="en" hidden>Track balance, income, expenses, obligations and savings from a clear, fast dashboard.</span></p></div>
         <figure class="app-shot"><img src="assets/dashboard.jpg" alt="لوحة المتابعة في تطبيق دخلك" loading="lazy"></figure>
       </article>
-
       <article class="showcase-row reverse">
         <div class="showcase-copy"><span class="tag"><span data-lang="ar">الصحة المالية</span><span data-lang="en" hidden>Financial health</span></span><h3><span data-lang="ar">افهم وضعك المالي بصورة أبسط</span><span data-lang="en" hidden>Understand your financial position</span></h3><p><span data-lang="ar">مؤشرات وخطة مالية تساعدك على رؤية التوازن بين الدخل والمصروفات والالتزامات والادخار.</span><span data-lang="en" hidden>Indicators and a financial plan help you see the balance between income, spending, obligations and savings.</span></p></div>
         <figure class="app-shot"><img src="assets/financial-health.jpg" alt="الصحة والخطة المالية الذكية" loading="lazy"></figure>
       </article>
     </div>
-
     <div class="screens-grid">
       <figure class="screen-card"><img src="assets/reports-summary.jpg" alt="ملخص التقارير المالية" loading="lazy"><figcaption><span data-lang="ar">ملخص التقارير</span><span data-lang="en" hidden>Reports summary</span></figcaption></figure>
       <figure class="screen-card"><img src="assets/reports-categories.jpg" alt="تحليل المصروفات حسب الفئات" loading="lazy"><figcaption><span data-lang="ar">تحليل الفئات</span><span data-lang="en" hidden>Category analysis</span></figcaption></figure>
       <figure class="screen-card"><img src="assets/gold-prices.jpg" alt="أسعار الذهب داخل تطبيق دخلك" loading="lazy"><figcaption><span data-lang="ar">أسعار الذهب</span><span data-lang="en" hidden>Gold prices</span></figcaption></figure>
       <figure class="screen-card"><img src="assets/currency-exchange.jpg" alt="تحويل العملات داخل تطبيق دخلك" loading="lazy"><figcaption><span data-lang="ar">تحويل العملات</span><span data-lang="en" hidden>Currency exchange</span></figcaption></figure>
     </div>
-
     <div class="note" style="margin-top:18px"><span data-lang="ar">الصور مأخوذة من إصدار الاختبار الحالي، وسيتم تحديث النصوص المترجمة واللقطات عند تجهيز إصدار النشر النهائي.</span><span data-lang="en" hidden>Screenshots are from the current test build. Translated text and screenshots will be refreshed for the final release.</span></div>
   </div>
 </section>
-
-<section class="section">
+<section class="section support-section">
   <div class="container grid-2">
     <article class="card"><div class="icon">⌂</div><h3><span data-lang="ar">عن «دخلك»</span><span data-lang="en" hidden>About Dakhlek</span></h3><p><span data-lang="ar">فكرة «دخلك» تقوم على تحويل متابعة المال من أرقام مبعثرة إلى صورة عملية يمكن فهمها ومراجعتها بسهولة.</span><span data-lang="en" hidden>Dakhlek is designed to turn scattered financial entries into a practical picture that is easier to understand and review.</span></p><div class="actions"><a class="btn btn-ghost" href="about.html"><span data-lang="ar">اعرف المزيد</span><span data-lang="en" hidden>Learn more</span></a></div></article>
     <article class="card"><div class="icon">✉</div><h3><span data-lang="ar">الدعم والتواصل</span><span data-lang="en" hidden>Support & contact</span></h3><p><span data-lang="ar">للاستفسارات المتعلقة بالخصوصية أو التطبيق: dakhlek.app@gmail.com</span><span data-lang="en" hidden>For app or privacy inquiries: dakhlek.app@gmail.com</span></p><div class="actions"><a class="btn btn-ghost" href="support.html"><span data-lang="ar">صفحة الدعم</span><span data-lang="en" hidden>Support page</span></a></div></article>
   </div>
 </section>
 </main>
-
 <footer class="footer">
   <div class="container footer-grid">
-    <div>
-      <div class="brand"><img src="assets/logo.png" alt="شعار دخلك"><span>Dakhlek</span></div>
-      <p class="small" style="margin:8px 0 0"><span data-lang="ar">موقع تطبيق دخلك. جميع الحقوق محفوظة.</span><span data-lang="en" hidden>Dakhlek app website. All rights reserved.</span></p>
-    </div>
-    <div class="footer-links">
-      <a href="about.html"><span data-lang="ar">عن التطبيق</span><span data-lang="en" hidden>About</span></a>
-      <a href="privacy.html"><span data-lang="ar">سياسة الخصوصية</span><span data-lang="en" hidden>Privacy Policy</span></a>
-      <a href="support.html"><span data-lang="ar">الدعم</span><span data-lang="en" hidden>Support</span></a>
-    </div>
+    <div><div class="brand"><img src="assets/logo.png" alt="شعار دخلك"><span>Dakhlek</span></div><p class="small" style="margin:8px 0 0"><span data-lang="ar">موقع تطبيق دخلك. جميع الحقوق محفوظة.</span><span data-lang="en" hidden>Dakhlek app website. All rights reserved.</span></p></div>
+    <div class="footer-links"><a href="about.html"><span data-lang="ar">عن التطبيق</span><span data-lang="en" hidden>About</span></a><a href="privacy.html"><span data-lang="ar">سياسة الخصوصية</span><span data-lang="en" hidden>Privacy Policy</span></a><a href="support.html"><span data-lang="ar">الدعم</span><span data-lang="en" hidden>Support</span></a></div>
   </div>
 </footer>
 <script src="script.js"></script>
